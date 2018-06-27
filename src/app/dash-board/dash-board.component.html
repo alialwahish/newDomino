@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+  <title>Dash Board</title>
+  <base href="/">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+
+
+
+<h1>Dash Board</h1>
+<p>Logged in as :{{currentUser}}</p>
+<p hidden id="user">{{currentUser}}</p>
+
+
+
+
+
+
+
+<button *ngIf='currentUser' (click)="logOut()">logout</button>

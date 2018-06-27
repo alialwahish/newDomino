@@ -1,0 +1,9 @@
+
+ <h1>Home Page</h1>
+ <a *ngIf='!loggedUser' [routerLink]="['/login']">login</a><br>
+ 
+ <p *ngIf='loggedUser' >Logged in as: {{loggedUser}}</p><br>
+
+ <a *ngIf='loggedUser' href (click)="logOut()">logout</a>
+
+
